@@ -1,16 +1,2 @@
 #!/bin/bash
-
-# Check if the $PYFILE environment variable is set
-if [ -z "$PYFILE" ]; then
-  echo "Error: Please set the PYFILE environment variable to the Python script you want to run."
-  exit 1
-fi
-
-# Check if the Python file exists
-if [ ! -f "$PYFILE" ]; then
-  echo "Error: Python file '$PYFILE' not found."
-  exit 1
-fi
-
-# Execute the Python script using the python3 interpreter (adjust for python version if needed)
-python3 "$PYFILE"
+python3 $PYFILE
